@@ -10,7 +10,6 @@ const tasksData = [
     {title: 'Estudar React', status: 'A FAZER'},
     {title: 'Codar projeto de tasks', status: 'FAZENDO'},
     {title: 'Comprar marmita do almoço', status: 'TERMINADO'},
-    
 ]
 
 const Column = ({ state }: StateProp) => {
