@@ -1,13 +1,17 @@
 import { useState } from 'react'
+import Column from './Column'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <main className=' flex flex-col items-center box-border p-12'>
-        <h1 className=' text-6xl'>Kanban Tasks</h1>
-
+      <main className=' flex flex-col items-center box-border p-12 h-screen'>
+        <h1 className=' text-5xl mb-10'>Kanban Tasks</h1>
+        <div id='kabanboard' className=' flex gap-12'>
+          <Column state='A fazer' />
+          <Column state='Fazendo' />
+          <Column state='Terminado' />
+        </div>
       </main>
     </>
   )
