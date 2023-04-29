@@ -48,7 +48,7 @@ const Column = ({ state }: StateProp) => {
       <>
         {tasks.map(
           (e) =>
-            e.status === state && <Task title={e.title} status={e.status} />
+            e.status === state && <Task key={e.title} title={e.title} status={e.status} />
         )}
       </>
     </div>
