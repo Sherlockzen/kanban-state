@@ -7,6 +7,7 @@ const NewTask = () => {
 
     const handleSave = () => {
         newOpenTask({title: task, status: 'A FAZER'});
+        setTask('');
     }
 
     return (
@@ -19,7 +20,7 @@ const NewTask = () => {
         {/* Put this part before </body> tag */}
         <input type="checkbox" id="my-modal-5" className="modal-toggle" />
         <div className="modal">
-            <div className="modal-box w-11/12 max-w-5xl">
+            <div className="modal-box w-11/12 max-w-lg">
                 <h3 className="font-bold text-lg">
                     Insira os dados da nova tarefa!
                 </h3>

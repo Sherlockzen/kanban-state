@@ -11,9 +11,24 @@ const Task = ({ title, status }: {title: string, status: string}) => {
             <div>{ title }</div>
             <div className=" flex justify-between">
                 <div></div>
-                <div className="status">
-                    { status }
-                </div>
+                {
+                    status === "A FAZER" &&
+                    <div className={"status badge badge-info p-4 items-center"}>
+                        <div>{ status }</div>
+                    </div>
+                }
+                {
+                    status === "FAZENDO" &&
+                    <div className={"status badge badge-warning p-4 items-center"}>
+                        <div>{ status }</div>
+                    </div>
+                }
+                {
+                    status === "TERMINADO" &&
+                    <div className={"status badge badge-success p-4 items-center"}>
+                        <div>{ status }</div>
+                    </div>
+                }
             </div>
         </div>
     )
