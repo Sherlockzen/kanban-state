@@ -1,4 +1,5 @@
 import Column from './Column'
+import NewTask from './NewTask'
 
 function App() {
 
@@ -6,6 +7,7 @@ function App() {
     <>
       <main className=' flex flex-col items-center box-border p-12 h-screen'>
         <h1 className=' text-5xl mb-10'>Kanban Tasks</h1>
+        <NewTask />
         <div id='kabanboard' className=' flex gap-12'>
           <Column state='A FAZER' />
           <Column state='FAZENDO' />
