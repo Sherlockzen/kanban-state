@@ -29,15 +29,15 @@ const Column = ({ state }: StateProp) => {
   }
 
   return (
-    <div onDrop={handleOnDrop} onDragOver={handleOnDragOver} className=" bg-cyan-900 min-h-[30rem] min-w-[24rem] text-white text-center p-4">
-      <p className=" mb-4">{state}</p>
-
-      <>
+    <div onDrop={handleOnDrop} onDragOver={handleOnDragOver} className=" min-h-[30rem] min-w-[24rem] text-white text-center card bg-neutral shadow-xl">
+      <div className=" card-body">
+        <h2 className=" card-title self-center">{state}</h2>
         {tasks.map(
           (e) =>
             e.status === state && <Task key={e.title} title={e.title} status={e.status} />
         )}
-      </>
+      </div>
+
     </div>
   );
 };

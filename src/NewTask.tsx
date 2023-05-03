@@ -13,7 +13,7 @@ const NewTask = () => {
     return (
     <div className=' m-4'>
         {/* The button to open modal */}
-        <label htmlFor="my-modal-5" className="btn">
+        <label htmlFor="my-modal-5" className="btn btn-outline">
             New task
         </label>
 
